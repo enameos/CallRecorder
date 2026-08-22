@@ -1,0 +1,39 @@
+<resources>
+    <string-array name="format_entries">
+        <item>AAC / M4A (recommended)</item>
+        <item>AMR-NB / 3GP (smaller files)</item>
+    </string-array>
+    <string-array name="format_values">
+        <item>m4a</item>
+        <item>3gp</item>
+    </string-array>
+
+    <string-array name="source_entries">
+        <item>Voice Communication (noise/echo suppression)</item>
+        <item>Raw Microphone</item>
+    </string-array>
+    <string-array name="source_values">
+        <item>voice_communication</item>
+        <item>mic</item>
+    </string-array>
+
+    <string-array name="bitrate_entries">
+        <item>Low (32 kbps)</item>
+        <item>Standard (64 kbps)</item>
+        <item>High (128 kbps)</item>
+    </string-array>
+    <string-array name="bitrate_values">
+        <item>32000</item>
+        <item>64000</item>
+        <item>128000</item>
+    </string-array>
+
+    <string-array name="storage_entries">
+        <item>App storage (private, no extra permission)</item>
+        <item>Custom folder\u2026</item>
+    </string-array>
+    <string-array name="storage_values">
+        <item>app_private</item>
+        <item>custom_folder</item>
+    </string-array>
+</resources>
