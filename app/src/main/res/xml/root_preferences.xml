@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Recording">
+
+        <ListPreference
+            android:key="pref_format"
+            android:title="@string/pref_format_title"
+            android:summary="@string/pref_format_summary"
+            android:entries="@array/format_entries"
+            android:entryValues="@array/format_values"
+            android:defaultValue="m4a" />
+
+        <ListPreference
+            android:key="pref_source"
+            android:title="@string/pref_source_title"
+            android:summary="@string/pref_source_summary"
+            android:entries="@array/source_entries"
+            android:entryValues="@array/source_values"
+            android:defaultValue="voice_communication" />
+
+        <ListPreference
+            android:key="pref_bitrate"
+            android:title="@string/pref_bitrate_title"
+            android:entries="@array/bitrate_entries"
+            android:entryValues="@array/bitrate_values"
+            android:defaultValue="64000"
+            android:dependency="pref_format" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Storage">
+
+        <ListPreference
+            android:key="pref_storage"
+            android:title="@string/pref_location_title"
+            android:summary="@string/pref_location_summary"
+            android:entries="@array/storage_entries"
+            android:entryValues="@array/storage_values"
+            android:defaultValue="app_private" />
+
+        <Preference
+            android:key="pref_choose_folder"
+            android:title="@string/pref_choose_folder" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
